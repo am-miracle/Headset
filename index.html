@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="box-border m-0 p-0">
+    <div class="bg-black h-screen w-screen -z-1 relative">
+        <div class="bg-yellow-500 w-1/2 h-full absolute right-0 z-0"></div>
+        <nav class="relative">
+            <div class="text-white flex justify-between items-center py-8 px-24 uppercase">
+                <div class="text-white ">Sound-box</div>
+                <div>
+                    <ul class="flex justify-evenly items-center relative">
+                        <li class="mx-4 "><a href="#" class="cursor-pointer no-underline text-current">Home</a></li>
+                        <li class="mx-4"><a href="#" class="cursor-pointer no-underline text-current">about</a></li>
+                        <li class="mx-4"><a href="#" class="cursor-pointer no-underline text-current">speciations</a></li>
+                        <li class="mx-4"><a href="#" class="cursor-pointer no-underline text-current">products</a></li>
+                        <li class="mx-4"><a href="#" class="cursor-pointer no-underline text-current">connect</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="flex justify-between items-center mt-20 text-white relative px-24">
+            <h1 class="text-7xl uppercase leading-normal font-black ">
+                <span class="block">the</span>
+                <span class="block">real</span>
+                <span class="block">sound</span>
+            </h1>
+            <div class="flex justify-center items-center absolute top-0 left-0 right-5 bottom-0 mx-16"><img src="/image/headset.png" alt="" class="transform -rotate-25 w-2/4"></div>
+            <div class="flex justify-center items-center">
+                <p class="capitalize mx-5 text-lg">click here to listen</p>
+                <a href="#" class="cursor-pointer"><i id="icon" class="fas fa-play-circle text-5xl"></i></a>
+            </div>
+        </main>
+
+        <audio src="/music/beretta-lake.mp3" id="audio"></audio>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
